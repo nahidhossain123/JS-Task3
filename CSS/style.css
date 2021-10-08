@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+}
+
+.search-input{
+    padding: 5px;
+}
+
+.product-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product-gallery::after{
+    content: "";
+    flex: auto;
+}
+
+.product-card{
+    background-color: white;
+    width: 4rem;
+    min-height: 4rem;
+    padding: 8px;
+    border-radius: 3px;
+    margin: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.product-card img{
+    width: 100%;
+    height: 80%;
+}
+
+.product-card span{
+    display: block;
+    background-color: white;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.cart{
+    background-color: white;
+    margin: 5px 5px 5px 0;
+    padding: 10px 20px;
+    min-height: 99vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item-image{
+    width:30px;
+    height:35px;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.product-details{
+    padding: 0 25px;
+}
+
+hr{
+    margin: 8px 0;  
+}
+
+.cart-price-details{
+    font-weight: bold;
+}
+
+.cart-price-details .right{
+    float: right;
+}
+
+.pay{
+    background-color: #7e57c2   ;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.price-details{
+    margin: 10px 0;
+}
+
+
+.main-body{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer{
+    font-weight: bold;
+    font-size: 0.8rem;
+    padding: 10px 0;
+    position: relative;
+}
+
+.footer .btn{
+    font-weight: bold;
+    font-size: 0.8rem;
+    background-color: white;
+}
+
+.footer-btn{
+    position: absolute;
+    right: 20px;
+}
+
+.footer-links{
+    position: absolute;
+    bottom: -13px;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .cart{
+        
+        margin: 60px 5px 5px 0;
+        
+    }
+  }
+
+.notification-container{
+    position: relative;
+}
+
+.notification{
+    position: absolute;
+    min-width: 20px;
+    min-height: 20px;
+    background-color: #00bfa5;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    right: -12px;
+    top: -8px;
+}
+
+.item-delete:hover{
+    color: rgb(138, 138, 138);
+}
+
+.pay:hover{
+    background-color: #8d6dc3;
+}
+
